@@ -10,12 +10,17 @@
     src: url(fonts/Gotham\ Medium\ Regular.ttf);
 }
 
+/* .home img{
+    position: absolute;
+    top: 0;
 
+} */
 .home{
     background-image: url('../img/consultations8.jpeg');
-    position:fixed;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:center;
     height: 100vh;
-    width: 100vw;
 }
 
 #logo{
@@ -30,7 +35,7 @@
 
 }
 #sublogo{
-    color:#000;
+    color: #ffff;
 }
 
 .menu-btn{
@@ -201,6 +206,7 @@ list-style: none;
 .category-items li{ 
   margin-right: 10px;
   background: #000;
+  opacity: 0.8;
   border: solid #ffff 2px;
   color: #ffff;
   padding: 7px;
@@ -213,8 +219,17 @@ list-style: none;
     color: black;
     cursor: pointer;
     transition: 1.5s;
-    border: solid #fff 2px;
+    border: solid #000 2px;
   }
+
+  .investments{
+    background-image: url('../img/consultations8.jpeg');
+    height: 400px;
+}
+
+
+
+
 
 
 /* MEDIA QUERIES */
@@ -245,6 +260,13 @@ list-style: none;
       }
       .service-items{
         display: none;
+    }
+
+    .home{
+        background-image: url('../img/consultations8.jpeg');
+
+        height: 100vh;
+        width: 100%;
     }
 
 }
